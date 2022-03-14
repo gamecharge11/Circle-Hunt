@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "main";
+  src: url("../Fonts/main.otf");
+}
+
+@font-face {
+  font-family: "sub";
+  src: url("../Fonts/sub.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sub";
+  font-weight: 900;
+  color: white;
+}
+
+*::selection {
+  background-color: none;
+  color: white;
+}
+
+*:focus {
+  outline: none;
+}
+
+canvas {
+  background-color: #202020;
+}
+
+body {
+  overflow: hidden;
+}
+
+#gameOver {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#gameOver h1 {
+  font-family: "main";
+  font-size: 7em;
+  font-weight: 400;
+}
+
+#gameOver h2 {
+  font-size: 2em;
+}
+
+#gameOver button {
+  width: fit-content;
+  height: fit-content;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 27px;
+  padding-right: 27px;
+  font-size: 22px;
+}
+
+#playAgain {
+  transform: skew(-10deg);
+  background-color: rgb(32, 32, 32);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#playAgain:hover {
+  transform: scale(1.1) skew(-10deg);
+}
+
+body {
+  cursor: url("../Assets/cursor/cursor.cur"), auto;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
