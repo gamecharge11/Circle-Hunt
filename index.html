@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
     <title>Side View Shooter</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/game.js" defer></script>
     <script src="./js/app.js" defer></script>
   </head>
   <body>
-    <section id="gameOver">
-      <h1>Game Over!</h1>
-      <br /><br /><br />
-      <h2>Score: <span id="score"></span></h2>
-      <br /><br />
-      <button id="playAgain" disabled>Play Again</button>
-    </section>
-    <canvas id="canvas"></canvas>
+    <section id="gameOver"></section>
+    <canvas id="canvas" style="display: none"></canvas>
+    <div class="menu" id="menu">
+      <div class="wrap">
+        <img
+          src="./Assets/images/logo.png"
+          alt="Logo not loading"
+          width="400"
+        />
+        <button id="play">Play</button>
+      </div>
+    </div>
   </body>
 </html>
