@@ -99,12 +99,12 @@ function main() {
   function load() {
     assets.forEach((element) => {
       var image = new Image();
-      image.src = "../Assets/images/" + element;
+      image.src = "./Assets/images/" + element;
       loaded.push(image);
     });
     audio.forEach((element) => {
       var split = element.split("||");
-      var audio = new Audio("../Assets/audio/" + split[0]);
+      var audio = new Audio("./Assets/audio/" + split[0]);
       audio.volume = split[1];
       loadedAudio.push(audio);
     });
